@@ -1,0 +1,37 @@
+# Internet overview, html and requests
+"""
+Http is hypertext exchange protocol. It is very old. Hypertext is just text filled
+with hyperlinks. Http is two sided, with client and server sides. Client sends
+a request, server gives a response
+Main instrument is URL: uniform resource locator
+https://stepik.org/512 --- protocol://host/path_to_resouce
+"""
+# Example request
+# try to GET https://ru.wikipedia.org/wiki/Python
+# there are also POST requests for sending forms or uploads
+"""
+GET /wiki/Python HTTP/1.1
+Host: ru.wikipedia.org
+...
+"""
+# Part 2: RESPONSE - HEADER
+# http version followed by response code
+# 200 is OK
+# 404 is not found
+# 500 is server error
+"""
+HTTP/1.1 200 OK
+Date: Sun, 10 Apr 2016 18:21:18 GMT
+Content-Type text/html: charset=UTF-8
+...
+"""
+# Part 3: RESPONSE - BODY
+# response message itself
+"""
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" class-"client-nojs">
+<head>
+<meta charset="UTF-8/>
+<title>Python -Википедия</title>
+...
+"""
